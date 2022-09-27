@@ -4,6 +4,28 @@ public class VolleyballCoach implements Coach{
 
 	private FortuneService fortuneService;
 	
+	// ADDING NEW FIELDS FOR E-MAIL AND TEAM
+	private String emailAddress;
+	private String team;
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("Volleyball Coach: inside setter method - setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("Volleyball Coach: inside setter method - setTeam");
+		this.team = team;
+	}
+
 	// CREATING A NO-ARG CONSTRUCTOR
 	public VolleyballCoach() {
 		System.out.println("Volleyball Coach: inside no-arg constructor");

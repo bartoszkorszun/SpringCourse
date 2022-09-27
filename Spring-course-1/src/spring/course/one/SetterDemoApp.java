@@ -17,6 +17,11 @@ public class SetterDemoApp {
 		
 		System.out.println(theCoach.getDailyFortune());
 		
+		// CALL OUT OUR NEW METHODS TO GET LITERAL VALUES
+		System.out.println(theCoach.getEmailAddress());
+		
+		System.out.println(theCoach.getTeam());
+		
 		// CLOSE THE CONTEXT
 		context.close();
 	}
