@@ -9,8 +9,17 @@
 
     <!-- Define your beans here -->
     
+    <!-- Define the dependency -->
+    
+    <bean id="myFortune"
+    	class="spring.course.one.HappyFortuneService">
+    </bean>
+    
     <bean id="myCoach"
-    	class="spring.course.one.VolleyballCoach">
+    	class="spring.course.one.TrackCoach">
+    	
+    	<!-- Set up constructor injection  -->
+    	<constructor-arg ref="myFortune" />
     </bean>
     
 </beans>

@@ -15,7 +15,10 @@ public class HelloSpringApp {
 		// CALL METHODS ON THE BEAN
 		System.out.println(theCoach.getDailyWorkout());
 		
-		//CLOSE THE CONTEXT
+		// CALLING OUR NEW METHOD FOR FORTUNE
+		System.out.println(theCoach.getDailyFortune());
+		
+		// CLOSE THE CONTEXT
 		context.close();
 	}
 
