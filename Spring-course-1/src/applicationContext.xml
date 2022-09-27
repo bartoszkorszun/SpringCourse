@@ -11,7 +11,7 @@
     
     <!-- Define the dependency -->
     
-    <bean id="myFortune"
+    <bean id="myFortuneService"
     	class="spring.course.one.HappyFortuneService">
     </bean>
     
@@ -19,7 +19,14 @@
     	class="spring.course.one.TrackCoach">
     	
     	<!-- Set up constructor injection  -->
-    	<constructor-arg ref="myFortune" />
+    	<constructor-arg ref="myFortuneService" />
+    </bean>
+    
+    <bean id="myVolleyballCoach"
+    	class="spring.course.one.VolleyballCoach">
+    	
+    	<!-- Set  up setter injection -->
+    	<property name="fortuneService" ref="myFortuneService" />
     </bean>
     
 </beans>
