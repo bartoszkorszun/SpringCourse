@@ -10,7 +10,7 @@ public class AnnotationDemoApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// GET THE BEAN FROM THE SPRING CONAINER
-		Coach theCoach = context.getBean("tennisCoach", Coach.class);
+		Coach theCoach = context.getBean("volleyballCoach", Coach.class);
 		
 		// CALL A METHOD ON THE BEAN
 		System.out.println(theCoach.getDailyWorkout());
