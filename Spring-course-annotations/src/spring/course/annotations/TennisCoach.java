@@ -1,12 +1,14 @@
 package spring.course.annotations;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 
 	@Autowired
@@ -16,6 +18,18 @@ public class TennisCoach implements Coach {
 	// DEFINE A DEFAULT CONSTRUCTOR
 	public TennisCoach() {
 		System.out.println(">> TennisCoach: inside the default constructor");
+	}
+	
+	// DEFINE AN INIT METHOD
+	@PostConstruct
+	public void myStartupMethod() {
+		System.out.println(">> TennisCoach: inside myStartupMethod");
+	}
+	
+	// DEFINE A DESTROY METHOD
+	@PreDestroy
+	public void myCleanupMethod() {
+		System.out.println(">> TennisCoach: inside myCleanupMethod");
 	}
 	
 	// DEFINE A SETTER METHOD
