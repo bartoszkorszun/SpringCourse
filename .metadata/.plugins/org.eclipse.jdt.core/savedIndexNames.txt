@@ -62,7 +62,6 @@ INDEX VERSION 1.131+D:\Workspace\Java\SpringCourse\.metadata\.plugins\org.eclips
 666172962.index
 4125317251.index
 352657707.index
-880858943.index
 1150768559.index
 3291384314.index
 2994805432.index
