@@ -10,6 +10,10 @@
 	<!-- Add entry to enable component scanning -->
 	
 	<context:component-scan base-package="spring.course.annotations" />
+	
+	<!-- Loading properties from the file -->
+    
+    <context:property-placeholder location="classpath:sport.properties" />
     
 </beans>
 
