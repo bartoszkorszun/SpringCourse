@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 
 	@Autowired
-	@Qualifier("fileFortuneService")
+	@Qualifier("TXTFortuneService")
 	private FortuneService fortuneService;
 	
 	// DEFINE A DEFAULT CONSTRUCTOR
@@ -20,6 +20,7 @@ public class TennisCoach implements Coach {
 		System.out.println(">> TennisCoach: inside the default constructor");
 	}
 	
+	/*
 	// DEFINE AN INIT METHOD
 	@PostConstruct
 	public void myStartupMethod() {
@@ -31,6 +32,7 @@ public class TennisCoach implements Coach {
 	public void myCleanupMethod() {
 		System.out.println(">> TennisCoach: inside myCleanupMethod");
 	}
+	*/
 	
 	// DEFINE A SETTER METHOD
 	/*

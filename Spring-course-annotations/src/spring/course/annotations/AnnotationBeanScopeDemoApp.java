@@ -24,6 +24,9 @@ public class AnnotationBeanScopeDemoApp {
 		
 		System.out.println("\n>>Memoty location of alphaCoach: " + alphaCoach);
 		
+		// CALL A METHOD ON THE BEAN
+		System.out.println(theCoach.getDailyFortune());
+		
 		// CLOSE THE CONTEXT
 		context.close();
 	}
