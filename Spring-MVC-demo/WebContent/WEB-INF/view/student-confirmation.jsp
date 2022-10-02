@@ -20,9 +20,13 @@
 		Operating Systems:
 		
 		<ul>
+			
 			<c:forEach var="tmp" items="${ student.operatingSystems }">
+				
 				<li> ${ tmp } </li>
+			
 			</c:forEach>
+		
 		</ul>
 		
 	</body>
